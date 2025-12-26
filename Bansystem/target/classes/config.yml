@@ -1,0 +1,47 @@
+# Main Settings
+settings:
+  # Must match the permission in plugin.yml
+  staff-notify-permission: "bansystem.notify"
+
+  # Configuration for punishments
+  allow-permanent-bans: true
+  max-temp-duration: "30d" # 0 for no limit
+
+# Toggle features on/off
+features:
+  history-enabled: true
+  ip-bans-enabled: true
+  global-mute-enabled: true
+  command-mute-enabled: true
+  staff-chat-enabled: true
+  playerinfo-enabled: true
+  gui-enabled: false
+
+# Chat Control Settings
+chat-filter:
+  bypass-permission: "bansystem.chatfilter.bypass"
+  blocked-words:
+    - "badword1"
+    - "badword2"
+  block-advertising: true
+  block-caps: true
+  caps:
+    min-length: 8
+    ratio: 0.7
+
+# SecureOP Module Settings
+secureop:
+  scan-enabled: true
+  scan-interval-ticks: 200
+  kick-message: "&c[SecureOP] You are not authorized to be OP."
+  bypass-permission: "secureop.bypass"
+  use-permission: false
+  allowed-ops:
+    - "RealHero120"
+  allowed-uuids: []
+
+# Punishment Module Settings
+punishments:
+  staff-notify-permission: "bansystem.notify"
+  allow-permanent-bans: true
+  max-temp-duration: "30d"

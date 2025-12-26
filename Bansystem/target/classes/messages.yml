@@ -1,0 +1,29 @@
+prefix: "&8[&4SMPCore&8] &r"
+
+# General Messages
+no-permission: "%prefix%&cYou do not have permission."
+invalid-duration: "%prefix%&cInvalid time format! (e.g., 1d, 1h, 30m)"
+
+# Ban Screen
+ban-screen:
+  - "&c&lYOU ARE BANNED"
+  - ""
+  - "&7Reason: &f{reason}"
+  - "&7Expires in: &f{duration}"
+  - "&7Staff: &f{staff}"
+
+ban-screen-perm:
+  - "&c&lYOU ARE PERMANENTLY BANNED"
+  - ""
+  - "&7Reason: &f{reason}"
+  - "&7Staff: &f{staff}"
+
+# Success Messages
+tempban-success: "%prefix%&aBanned &f{target} &afor &f{duration}&a."
+unban-success: "%prefix%&aUnbanned &f{target}&a."
+tempmute-success: "%prefix%&aMuted &f{target} &afor &f{duration}&a."
+unmute-success: "%prefix%&aUnmuted &f{target}&a."
+unmute-failed: "%prefix%&c{target} is not muted."
+
+# Chat Mute Message
+mute-chat-warning: "&cYou are muted for: &f{duration}"
