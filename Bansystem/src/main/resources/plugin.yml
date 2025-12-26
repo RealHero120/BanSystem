@@ -1,0 +1,38 @@
+name: bansystem
+author: RealHero120
+version: '3.0'
+main: me.hero.bansystem.Bansystem
+api-version: '1.21'
+softdepend:
+  - SMPCore
+  - DiscordSRV
+
+
+commands:
+  secureop:
+    description: "Manage SecureOP settings."
+    permission: secureop.reload
+  tempban:
+    description: "Temporary ban a player."
+    permission: bansystem.tempban
+  unban:
+    description: "Unban a player."
+    permission: bansystem.unban
+  ipban:
+    description: "IP ban a player."
+    permission: bansystem.ipban
+  unipban:
+    description: "Unban an IP."
+    permission: bansystem.unipban
+  tempmute:
+    description: "Temporary mute a player."
+    permission: bansystem.tempmute
+  unmute:
+    description: "Unmute a player."
+    permission: bansystem.unmute
+  alts:
+    description: "Check player alts."
+    permission: bansystem.alts
+  history:
+    description: "Check punishment history."
+    permission: bansystem.history

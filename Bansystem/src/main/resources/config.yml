@@ -1,0 +1,72 @@
+# Main Settings
+settings:
+  staff-notify-permission: "bansystem.notify"
+  allow-permanent-bans: true
+  max-temp-duration: "30d" # 0 for no limit
+
+# Feature toggles (more fine-grained)
+modules:
+  bans:
+    enabled: true
+    delegate-to-smpcore: false
+  mutes:
+    enabled: true
+    delegate-to-smpcore: false
+  ipbans:
+    enabled: true
+    delegate-to-smpcore: false
+  secureop:
+    enabled: true
+  combatguard:
+    enabled: true
+  chat:
+    enabled: true
+  history:
+    enabled: true
+  gui:
+    enabled: false
+
+# Integrations (optional)
+integrations:
+  smpcore:
+    enabled: true            # Whether to attempt to detect/use SMPCore
+    prefer_smpcore: false    # If true and SMPCore present, SMPCore is used for delegate-capable modules
+    # If you need specific configuration for SMPCore hooks, add them here
+  discordsrv:
+    enabled: false
+
+# Chat Control Settings (unchanged -> used when modules.chat.enabled = true)
+chat-filter:
+  bypass-permission: "bansystem.chatfilter.bypass"
+  blocked-words:
+    - "badword1"
+    - "badword2"
+  block-advertising: true
+  block-caps: true
+  caps:
+    min-length: 8
+    ratio: 0.7
+
+# SecureOP Module Settings
+secureop:
+  scan-enabled: true
+  scan-interval-ticks: 200
+  kick-message: "&c[SecureOP] You are not authorized to be OP."
+  bypass-permission: "secureop.bypass"
+  use-permission: false
+  allowed-ops:
+    - "RealHero120"
+  allowed-uuids: []
+
+# Combat settings (used by combatguard)
+combat:
+  duration-seconds: 10
+  blocked-commands:
+    - "home"
+    - "warp"
+
+# Punishment Module Settings (kept for compatibility)
+punishments:
+  staff-notify-permission: "bansystem.notify"
+  allow-permanent-bans: true
+  max-temp-duration: "30d"
